@@ -49,7 +49,7 @@ module Dropbox # :nodoc:
     http.read_timeout = 600
 
     if RUBY_VERSION >= '1.9'
-      # SSL protocol and ciphersuite settings are supported strating with version 1.9
+      # SSL protocol and ciphersuite settings are supported starting with version 1.9
       http.ssl_version = 'TLSv1'
       http.ciphers = 'ECDHE-RSA-AES256-GCM-SHA384:'\
         'ECDHE-RSA-AES256-SHA384:'\
